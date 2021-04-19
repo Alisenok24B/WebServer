@@ -4,12 +4,12 @@ from wtforms.fields.html5 import EmailField
 from wtforms.validators import DataRequired
 
 
-class RegisterForm(FlaskForm):
-    name = StringField('Имя пользователя', validators=[DataRequired()])
-    password = PasswordField('Пароль', validators=[DataRequired()])
-    password_again = PasswordField('Повторите пароль', validators=[DataRequired()])
-    date = DateField('Дата рождения', format='%d.%m.%Y')
-    submit = SubmitField('Войти')
+class RegisterForm(FlaskForm):  # register form
+    name = StringField('Имя пользователя', validators=[DataRequired()])  # name
+    password = PasswordField('Пароль', validators=[DataRequired()])  # password
+    password_again = PasswordField('Повторите пароль', validators=[DataRequired()])  # password again
+    date = DateField('Дата рождения', format='%d.%m.%Y')  # date of birth
+    submit = SubmitField('Зарегистрироваться')  # button register
 
 
 class LoginForm(FlaskForm):

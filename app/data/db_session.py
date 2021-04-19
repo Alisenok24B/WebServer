@@ -8,17 +8,17 @@ SqlAlchemyBase = dec.declarative_base()
 __factory = None
 
 
-def global_init(db_file):
+def global_init(db_file):  # global initialization
     global __factory
 
     if __factory:
         return
 
-    if not db_file or not db_file.strip():
+    if not db_file or not db_file.strip():  # check errors
         raise Exception("Необходимо указать файл базы данных.")
 
-    conn_str = f'sqlite:///{db_file.strip()}?check_same_thread=False'
-    print(f"Подключение к базе данных по адресу {conn_str}")
+    conn_str = f'sqlite:///{db_file.strip()}?check_same_thread=False'  # address of base
+    print(f"Подключение к базе данных по адресу {conn_str}")  # connect to base
 
     engine = sa.create_engine(conn_str, echo=False)
     __factory = orm.sessionmaker(bind=engine)
@@ -28,6 +28,6 @@ def global_init(db_file):
     SqlAlchemyBase.metadata.create_all(engine)
 
 
-def create_session() -> Session:
+def create_session() -> Session:  # create session
     global __factory
     return __factory()

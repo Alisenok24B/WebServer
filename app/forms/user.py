@@ -12,8 +12,8 @@ class RegisterForm(FlaskForm):  # register form
     submit = SubmitField('Зарегистрироваться')  # button register
 
 
-class LoginForm(FlaskForm):
-    email = EmailField('Почта', validators=[DataRequired()])
-    password = PasswordField('Пароль', validators=[DataRequired()])
-    remember_me = BooleanField('Запомнить меня')
-    submit = SubmitField('Войти')
+class LoginForm(FlaskForm):  # login form
+    name = StringField('Имя пользователя', validators=[DataRequired()])  # name
+    password = PasswordField('Пароль', validators=[DataRequired()])  # password
+    remember_me = BooleanField('Запомнить меня')  # check box remember me
+    submit = SubmitField('Войти')  # button go

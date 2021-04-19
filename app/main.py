@@ -55,19 +55,19 @@ def load_user(user_id):
     return db_sess.query(User).get(user_id)
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])  # login
 def login():
-    form = LoginForm()
+    form = LoginForm()  # login form
     if form.validate_on_submit():
-        db_sess = db_session.create_session()
-        user = db_sess.query(User).filter(User.email == form.email.data).first()
-        if user and user.check_password(form.password.data):
-            login_user(user, remember=form.remember_me.data)
+        db_sess = db_session.create_session()  # create session
+        user = db_sess.query(User).filter(User.name == form.name.data).first()  # find user
+        if user and user.check_password(form.password.data):  # check user
+            login_user(user, remember=form.remember_me.data) # remember user
             return redirect("/")
-        return render_template('login.html',
+        return render_template('login.html',  # error
                                message="Неправильный логин или пароль",
                                form=form)
-    return render_template('login.html', title='Авторизация', form=form)
+    return render_template('login.html', title='Авторизация', form=form)  # see the login website
 
 
 @app.route('/logout')

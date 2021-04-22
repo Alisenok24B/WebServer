@@ -77,7 +77,7 @@ def logout():
     return redirect("/")
 
 
-@app.route('/news',  methods=['GET', 'POST'])
+'''@app.route('/news',  methods=['GET', 'POST'])
 @login_required
 def add_news():
     form = NewsForm()
@@ -92,7 +92,7 @@ def add_news():
         db_sess.commit()
         return redirect('/')
     return render_template('news.html', title='Добавление новости',
-                           form=form)
+                           form=form)'''
 
 
 @app.route('/news/<int:id>', methods=['GET', 'POST'])

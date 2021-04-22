@@ -91,11 +91,11 @@ def add_news():
         db_sess.merge(current_user)
         db_sess.commit()
         return redirect('/')
-    return render_template('news.html', title='Добавление новости',
+    return render_template('horoscope.html', title='Добавление новости',
                            form=form)'''
 
 
-@app.route('/news/<int:id>', methods=['GET', 'POST'])
+'''@app.route('/news/<int:id>', methods=['GET', 'POST'])
 @login_required
 def edit_news(id):
     form = NewsForm()
@@ -123,10 +123,10 @@ def edit_news(id):
             return redirect('/')
         else:
             abort(404)
-    return render_template('news.html',
+    return render_template('horoscope.html',
                            title='Редактирование новости',
                            form=form
-                           )
+                           )'''
 
 
 def main():

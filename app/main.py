@@ -128,7 +128,6 @@ def edit_news(id):
                            form=form
                            )'''
 
-
 def main():
     db_session.global_init("db/blogs.db")
     app.run(debug=True)

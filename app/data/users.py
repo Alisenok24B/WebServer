@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 import sqlalchemy
 from .db_session import SqlAlchemyBase
 from sqlalchemy import orm
@@ -11,12 +11,30 @@ class User(SqlAlchemyBase, UserMixin):  # class user
 
     id = sqlalchemy.Column(sqlalchemy.Integer,  # user's id
                            primary_key=True, autoincrement=True)
-    name = sqlalchemy.Column(sqlalchemy.String, nullable=True)  # user's name
-    date = sqlalchemy.Column(sqlalchemy.Date, nullable=True)  # user's date of birth
-    hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)  # user's hashed password
-    created_date = sqlalchemy.Column(sqlalchemy.DateTime,
-                                     default=datetime.datetime.now)  # created date of this user
-    news = orm.relation("News", back_populates='user')  # will be change when I will understand how
+    name = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's name
+    hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's hashed password
+    sign = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's sign
+    dates_signs = [((3, 21), (4, 19), 'Овен'),
+                   ((4, 20), (5, 20), 'Телец'),
+                   ((5, 21), (6, 20), 'Близнецы'),
+                   ((6, 21), (7, 22), 'Рак'),
+                   ((7, 23), (8, 22), 'Лев'),
+                   ((8, 22), (9, 22), 'Дева'),
+                   ((9, 23), (10, 22), 'Весы'),
+                   ((10, 23), (11, 21), 'Скорпион'),
+                   ((11, 22), (12, 21), 'Стрелец'),
+                   ((12, 22), (1, 19), 'Козерог'),
+                   ((1, 20), (2, 18), 'Водолей'),
+                   ((2, 19), (3, 20), 'Рыбы'),
+                   ]
+    # news = orm.relation("News", back_populates='user')
+    # will be change when I will understand how
+
+    def date_to_sign(self, date):
+        for i in self.dates_signs:
+            if dt.date(date.year, i[0][0], i[0][1]) <= date <= dt.date(date.year, i[1][0], i[1][1]):
+                self.sign = i[2]
+                break
 
     def __repr__(self):  # str data if user
         return f'''<User> {self.id} {self.name} {self.date}'''

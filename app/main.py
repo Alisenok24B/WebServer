@@ -39,9 +39,9 @@ def reqister():
                                    form=form,
                                    message="Такой пользователь уже есть")
         user = User(  # add user to base users
-            name=form.name.data,
-            date=form.date.data
+            name=form.name.data
         )
+        user.date_to_sign(form.date.data)
         user.set_password(form.password.data)
         db_sess.add(user)
         db_sess.commit()

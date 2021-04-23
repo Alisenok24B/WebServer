@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8a30ca3-f79b-48a5-aa9b-a3204cb8da14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/horoscope.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/horoscope.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619187399967</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="some corrections">
+      <created>1619187903902</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1619187903902</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add comments">
+      <created>1619188141618</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1619188141618</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,24 +247,25 @@
     <MESSAGE value="comas &quot;,&quot;" />
     <MESSAGE value="change def index, add joke" />
     <MESSAGE value="correct def index" />
-    <MESSAGE value="add comments" />
     <MESSAGE value="add some" />
     <MESSAGE value="made index bt with error in utf" />
     <MESSAGE value="index OK" />
     <MESSAGE value="add pictures" />
     <MESSAGE value="add website horoscope, comments, correct template horoscope" />
     <MESSAGE value="correct comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct comments" />
+    <MESSAGE value="some corrections" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619185973170">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619185973170" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619187900393">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619188134138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619187900393" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619188134138" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1619187013324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -2,9 +2,7 @@ from os import abort
 from flask import Flask, render_template, request
 from data import db_session
 from data.users import User
-# from data.news import News
 from forms.user import RegisterForm, LoginForm
-# from forms.news import NewsForm
 from werkzeug.utils import redirect
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from random import choice
@@ -18,8 +16,8 @@ login_manager.init_app(app)
 
 @app.route("/")
 def index():  # main website
-    if current_user.is_authenticated:
-        return redirect('/horoscope')
+    if current_user.is_authenticated:  # is authenticate user or not
+        return redirect('/horoscope')  # see the horoscope
     else:
         with open('static/json/anekdot.json', 'r', encoding='utf-8') as joke_file:  # open json file
             data = json.load(joke_file)  # create json object
@@ -32,20 +30,20 @@ def reqister():  # register
     form = RegisterForm()  # register form
     if form.validate_on_submit():
         if form.password.data != form.password_again.data:  # check password and password_again
-            return render_template('register.html', title='Регистрация',
+            return render_template('register.html', title='Регистрация',  # error
                                    form=form,
                                    message="Пароли не совпадают")
         db_sess = db_session.create_session()
         if db_sess.query(User).filter(User.name == form.name.data).first():  # check user in base users
-            return render_template('register.html', title='Регистрация',
+            return render_template('register.html', title='Регистрация',  # error
                                    form=form,
                                    message="Такой пользователь уже есть")
-        user = User(  # add user to base users
+        user = User(  # add user parameters
             name=form.name.data
         )
-        user.date_to_sign(form.date.data)
-        user.set_password(form.password.data)
-        db_sess.add(user)
+        user.date_to_sign(form.date.data)  # translate date to sign and add sign
+        user.set_password(form.password.data)  # add user's password
+        db_sess.add(user)  # add user
         db_sess.commit()
         return redirect('/login')  # go to the next website
     return render_template('register.html', title='Регистрация', form=form)  # see the register website

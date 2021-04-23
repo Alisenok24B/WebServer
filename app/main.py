@@ -2,9 +2,9 @@ from os import abort
 from flask import Flask, render_template, request
 from data import db_session
 from data.users import User
-from data.news import News
+# from data.news import News
 from forms.user import RegisterForm, LoginForm
-from forms.news import NewsForm
+# from forms.news import NewsForm
 from werkzeug.utils import redirect
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from random import choice
@@ -19,15 +19,15 @@ login_manager.init_app(app)
 @app.route("/")
 def index():  # main website
     # db_sess = db_session.create_session()
-    with open('anekdot.json') as joke_file:  # open json file
+    with open('static/json/anekdot.json', 'r', encoding='utf-8') as joke_file:  # open json file
         data = json.load(joke_file)  # create json object
-        joke = choice(data.keys())  # choice random joke
+        index_joke = choice(list(data.keys()))  # choice random joke
     '''if current_user.is_authenticated:
         news = db_sess.query(News).filter(
             (News.user == current_user) | (News.is_private != True))
     else:
         news = db_sess.query(News).filter(News.is_private != True)'''
-    return render_template("index.html", joke=joke)  # see the main website
+    return render_template("index.html", joke=data[index_joke])  # see the main website
 
 
 @app.route('/register', methods=['GET', 'POST'])  # register
@@ -82,6 +82,39 @@ def logout():
     return redirect("/")
 
 
+@app.route('/horoscope')
+@login_required
+def horoscope():
+    #db_sess = db_session.create_session()
+    #user = db_sess.query(User).filter(User.id == current_user.id).first()
+    '''if form.validate_on_submit():
+        db_sess = db_session.create_session()
+        news = db_sess.query(News).filter(News.id == id,
+                                          News.user == current_user
+                                          ).first()
+        if news:
+            news.title = form.title.data
+            news.content = form.content.data
+            news.is_private = form.is_private.data
+            db_sess.commit()
+            return redirect('/')
+        else:
+            abort(404)'''
+    with open('znaki.json') as sign_file:  # open json file
+        data = json.load(sign_file)
+        about_sign = data[current_user.sign]
+    with open('info.json') as info_file:  # open json file
+        data = json.load(info_file)
+        prediction = data[current_user.sign]
+    return render_template('horoscope.html',
+                           title='Редактирование новости',
+                           name=current_user.name,
+                           sign=current_user.sign,
+                           # picture=
+                           about=about_sign,
+                           prediction=prediction)
+
+
 '''@app.route('/news',  methods=['GET', 'POST'])
 @login_required
 def add_news():
@@ -134,8 +167,8 @@ def edit_news(id):
                            )'''
 
 def main():
-    db_session.global_init("db/blogs.db")
-    app.run(debug=True)
+    db_session.global_init("db/horoscope.db")
+    app.run(host='127.0.0.1', port=8080, debug=True)
 
 
 if __name__ == '__main__':

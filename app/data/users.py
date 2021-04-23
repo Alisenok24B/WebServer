@@ -35,7 +35,7 @@ class User(SqlAlchemyBase, UserMixin):  # class user
                 break
 
     def __repr__(self):  # str data if user
-        return f'''<User> {self.id} {self.name} {self.date}'''
+        return f'''<User> {self.id} {self.name} {self.sign}'''
 
     def set_password(self, password):  # hash password
         self.hashed_password = generate_password_hash(password)

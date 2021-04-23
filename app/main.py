@@ -61,7 +61,7 @@ def login():  # login
         db_sess = db_session.create_session()  # create session
         user = db_sess.query(User).filter(User.name == form.name.data).first()  # find user
         if user and user.check_password(form.password.data):  # check user
-            login_user(user, remember=form.remember_me.data) # remember user
+            login_user(user, remember=form.remember_me.data)  # remember user
             return redirect("/horoscope")
         return render_template('login.html',  # error
                                message="Неправильный логин или пароль",

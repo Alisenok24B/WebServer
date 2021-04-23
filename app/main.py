@@ -167,7 +167,7 @@ def edit_news(id):
                            )'''
 
 def main():
-    db_session.global_init("db/blogs.db")
+    db_session.global_init("db/horoscope.db")
     app.run(debug=True)
 
 

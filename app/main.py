@@ -19,8 +19,8 @@ login_manager.init_app(app)
 @app.route("/")
 def index():
     # db_sess = db_session.create_session()
-    with open('cats_json.json') as cat_file:
-        data = json.load(cat_file)
+    with open('anekdot.json') as joke_file:
+        data = json.load(joke_file)
         joke = choice(data.keys())
     '''if current_user.is_authenticated:
         news = db_sess.query(News).filter(

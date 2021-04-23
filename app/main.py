@@ -7,6 +7,8 @@ from forms.user import RegisterForm, LoginForm
 from forms.news import NewsForm
 from werkzeug.utils import redirect
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
+from random import choice
+import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -16,13 +18,16 @@ login_manager.init_app(app)
 
 @app.route("/")
 def index():
-    db_sess = db_session.create_session()
-    if current_user.is_authenticated:
+    # db_sess = db_session.create_session()
+    with open('cats_json.json') as cat_file:
+        data = json.load(cat_file)
+        joke = choice(data.keys())
+    '''if current_user.is_authenticated:
         news = db_sess.query(News).filter(
             (News.user == current_user) | (News.is_private != True))
     else:
-        news = db_sess.query(News).filter(News.is_private != True)
-    return render_template("index.html", news=news)
+        news = db_sess.query(News).filter(News.is_private != True)'''
+    return render_template("index.html", joke=joke)
 
 
 @app.route('/register', methods=['GET', 'POST'])  # register

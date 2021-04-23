@@ -1,5 +1,4 @@
-from os import abort
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 from data import db_session
 from data.users import User
 from forms.user import RegisterForm, LoginForm

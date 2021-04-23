@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8a30ca3-f79b-48a5-aa9b-a3204cb8da14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__all_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/horoscope.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Близнецы.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/twins.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Весы.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/scales.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Водолей.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/aquarius.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Дева.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/virgin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Козерог.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/capricorn.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Лев.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/lion.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Овен.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/aries.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Рак.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/cancer.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Рыбы.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/pisces.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Скорпион.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/scorpion.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Стрелец.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/saggitarius.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/Телец.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/cells.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/json/znaki.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/znaki.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/horoscope.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/horoscope.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list_2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619183890224</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add website horoscope, comments, correct template horoscope">
+      <created>1619187308223</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1619187308223</updated>
+    </task>
+    <task id="LOCAL-00018" summary="correct comments">
+      <created>1619187399967</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1619187399967</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,41 +239,43 @@
     <MESSAGE value="made index bt with error in utf" />
     <MESSAGE value="index OK" />
     <MESSAGE value="add pictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pictures" />
+    <MESSAGE value="add website horoscope, comments, correct template horoscope" />
+    <MESSAGE value="correct comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619185973170">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619185973170" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619187303728">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619187397835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619187303728" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619187397835" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1619187013324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619187013324" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1619187125522">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1619187832177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619187125522" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1619187125522">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619187832177" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1619187832177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619187125522" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1619187125522">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619187832177" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1619187832177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619187125522" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1619187125522">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619187832177" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1619187832177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619187125522" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619187320223">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619187832177" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619187406725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619187320223" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619187406725" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1619178094468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -5,8 +5,8 @@
 		<form action="/action_page.php">
 			<h1 class="display-5">Здравствуйте, {{ name }}</h1>
 			<h5>По знаку зодиака вы: {{ sign }}</h5>
-			<div>{{ about_sign }}</div>
-			<div>{{ prediction }}</div>
+			<div>Немного о Вас: {{ about_sign }}</div>
+			<div>Предсказание звёзд на сегодня: {{ prediction }}</div>
 		</form>
 	<div class="media border p-3">
 		{% if sign == 'Овен' %}

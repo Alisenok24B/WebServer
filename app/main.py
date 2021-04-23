@@ -18,15 +18,9 @@ login_manager.init_app(app)
 
 @app.route("/")
 def index():  # main website
-    # db_sess = db_session.create_session()
     with open('static/json/anekdot.json', 'r', encoding='utf-8') as joke_file:  # open json file
         data = json.load(joke_file)  # create json object
         index_joke = choice(list(data.keys()))  # choice random joke
-    '''if current_user.is_authenticated:
-        news = db_sess.query(News).filter(
-            (News.user == current_user) | (News.is_private != True))
-    else:
-        news = db_sess.query(News).filter(News.is_private != True)'''
     return render_template("index.html", joke=data[index_joke])  # see the main website
 
 
@@ -55,7 +49,7 @@ def reqister():
 
 
 @login_manager.user_loader
-def load_user(user_id):
+def load_user(user_id):  # get user for normal flask-login's work
     db_sess = db_session.create_session()
     return db_sess.query(User).get(user_id)
 
@@ -77,7 +71,7 @@ def login():
 
 @app.route('/logout')
 @login_required
-def logout():
+def logout():  # forget user and go to main website
     logout_user()
     return redirect("/")
 
@@ -165,6 +159,7 @@ def edit_news(id):
                            title='Редактирование новости',
                            form=form
                            )'''
+
 
 def main():
     db_session.global_init("db/horoscope.db")

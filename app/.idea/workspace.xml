@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8a30ca3-f79b-48a5-aa9b-a3204cb8da14" name="Default Changelist" comment="">
+    <list default="true" id="f8a30ca3-f79b-48a5-aa9b-a3204cb8da14" name="Default Changelist" comment="index OK">
+      <change afterPath="$PROJECT_DIR$/static/img/Близнецы.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Весы.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Водолей.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Дева.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Козерог.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Лев.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Овен.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Рак.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Рыбы.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Скорпион.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Стрелец.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Телец.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/list_1.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619180183776</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="index OK">
+      <created>1619180657750</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619180657750</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,17 +230,18 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="add some" />
     <MESSAGE value="made index bt with error in utf" />
-    <option name="LAST_COMMIT_MESSAGE" value="made index bt with error in utf" />
+    <MESSAGE value="index OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="index OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619178870964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1619178870964" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619180179934">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1619180720496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619180179934" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619180720496" />
     <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1619178502241">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -240,10 +262,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619180451795" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619180187801">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1619180715506">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619180187801" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619180715506" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1619178094468">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

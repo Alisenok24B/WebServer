@@ -14,7 +14,7 @@ class User(SqlAlchemyBase, UserMixin):  # class user
     name = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's name
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's hashed password
     sign = sqlalchemy.Column(sqlalchemy.String, nullable=False)  # user's sign
-    dates_signs = [((3, 21), (4, 19), 'Овен'),
+    dates_signs = [((3, 21), (4, 19), 'Овен'),  # list signs with dates
                    ((4, 20), (5, 20), 'Телец'),
                    ((5, 21), (6, 20), 'Близнецы'),
                    ((6, 21), (7, 22), 'Рак'),
@@ -27,10 +27,8 @@ class User(SqlAlchemyBase, UserMixin):  # class user
                    ((1, 20), (2, 18), 'Водолей'),
                    ((2, 19), (3, 20), 'Рыбы'),
                    ]
-    # news = orm.relation("News", back_populates='user')
-    # will be change when I will understand how
 
-    def date_to_sign(self, date):
+    def date_to_sign(self, date):  # find sign of user
         for i in self.dates_signs:
             if dt.date(date.year, i[0][0], i[0][1]) <= date <= dt.date(date.year, i[1][0], i[1][1]):
                 self.sign = i[2]

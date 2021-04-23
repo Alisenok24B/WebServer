@@ -29,7 +29,8 @@ class User(SqlAlchemyBase, UserMixin):  # class user
 
     def date_to_sign(self, date):  # find sign of user
         for i in self.dates_signs:
-            if dt.date(date.year, i[0][0], i[0][1]) <= date <= dt.date(date.year, i[1][0], i[1][1]):
+            if dt.date(date.year if i[0][0] != 12 else date.year - 1,
+                       i[0][0], i[0][1]) <= date <= dt.date(date.year, i[1][0], i[1][1]):
                 self.sign = i[2]
                 break
 

@@ -17,17 +17,17 @@ login_manager.init_app(app)
 
 
 @app.route("/")
-def index():
+def index():  # main website
     # db_sess = db_session.create_session()
-    with open('anekdot.json') as joke_file:
-        data = json.load(joke_file)
-        joke = choice(data.keys())
+    with open('anekdot.json') as joke_file:  # open json file
+        data = json.load(joke_file)  # create json object
+        joke = choice(data.keys())  # choice random joke
     '''if current_user.is_authenticated:
         news = db_sess.query(News).filter(
             (News.user == current_user) | (News.is_private != True))
     else:
         news = db_sess.query(News).filter(News.is_private != True)'''
-    return render_template("index.html", joke=joke)
+    return render_template("index.html", joke=joke)  # see the main website
 
 
 @app.route('/register', methods=['GET', 'POST'])  # register

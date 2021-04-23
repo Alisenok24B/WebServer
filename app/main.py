@@ -82,6 +82,39 @@ def logout():
     return redirect("/")
 
 
+@app.route('/horoscope/<int:id>')
+@login_required
+def horoscope(id):
+    db_sess = db_session.create_session()
+    user = db_sess.query(User).filter(User.id == id).first()
+    '''if form.validate_on_submit():
+        db_sess = db_session.create_session()
+        news = db_sess.query(News).filter(News.id == id,
+                                          News.user == current_user
+                                          ).first()
+        if news:
+            news.title = form.title.data
+            news.content = form.content.data
+            news.is_private = form.is_private.data
+            db_sess.commit()
+            return redirect('/')
+        else:
+            abort(404)'''
+    with open('znaki.json') as sign_file:  # open json file
+        data = json.load(sign_file)
+        about_sign = data[user.sign]
+    with open('info.json') as info_file:  # open json file
+        data = json.load(info_file)
+        prediction = data[user.sign]
+    return render_template('horoscope.html',
+                           title='Редактирование новости',
+                           name=user.name,
+                           sign=user.sign,
+                           # picture=
+                           about=about_sign,
+                           prediction=prediction)
+
+
 '''@app.route('/news',  methods=['GET', 'POST'])
 @login_required
 def add_news():

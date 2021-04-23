@@ -27,8 +27,8 @@ def index():  # main website
     return render_template("index.html", joke=data[index_joke])  # see the main website
 
 
-@app.route('/register', methods=['GET', 'POST'])  # register
-def reqister():
+@app.route('/register', methods=['GET', 'POST'])
+def reqister():  # register
     form = RegisterForm()  # register form
     if form.validate_on_submit():
         if form.password.data != form.password_again.data:  # check password and password_again
@@ -57,8 +57,8 @@ def load_user(user_id):  # get user for normal flask-login's work
     return db_sess.query(User).get(user_id)
 
 
-@app.route('/login', methods=['GET', 'POST'])  # login
-def login():
+@app.route('/login', methods=['GET', 'POST'])
+def login():  # login
     form = LoginForm()  # login form
     if form.validate_on_submit():
         db_sess = db_session.create_session()  # create session

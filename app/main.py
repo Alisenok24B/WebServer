@@ -19,7 +19,7 @@ login_manager.init_app(app)
 @app.route("/")
 def index():  # main website
     # db_sess = db_session.create_session()
-    with open('static/json/anekdot.json') as joke_file:  # open json file
+    with open('static/json/anekdot.json', 'r', encoding='utf-8') as joke_file:  # open json file
         data = json.load(joke_file)  # create json object
         index_joke = choice(list(data.keys()))  # choice random joke
     '''if current_user.is_authenticated:
@@ -82,11 +82,11 @@ def logout():
     return redirect("/")
 
 
-@app.route('/horoscope/<int:id>')
+@app.route('/horoscope')
 @login_required
-def horoscope(id):
-    db_sess = db_session.create_session()
-    user = db_sess.query(User).filter(User.id == id).first()
+def horoscope():
+    #db_sess = db_session.create_session()
+    #user = db_sess.query(User).filter(User.id == current_user.id).first()
     '''if form.validate_on_submit():
         db_sess = db_session.create_session()
         news = db_sess.query(News).filter(News.id == id,
@@ -102,14 +102,14 @@ def horoscope(id):
             abort(404)'''
     with open('znaki.json') as sign_file:  # open json file
         data = json.load(sign_file)
-        about_sign = data[user.sign]
+        about_sign = data[current_user.sign]
     with open('info.json') as info_file:  # open json file
         data = json.load(info_file)
-        prediction = data[user.sign]
+        prediction = data[current_user.sign]
     return render_template('horoscope.html',
                            title='Редактирование новости',
-                           name=user.name,
-                           sign=user.sign,
+                           name=current_user.name,
+                           sign=current_user.sign,
                            # picture=
                            about=about_sign,
                            prediction=prediction)

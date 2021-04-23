@@ -2,9 +2,9 @@ from os import abort
 from flask import Flask, render_template, request
 from data import db_session
 from data.users import User
-from data.news import News
+# from data.news import News
 from forms.user import RegisterForm, LoginForm
-from forms.news import NewsForm
+# from forms.news import NewsForm
 from werkzeug.utils import redirect
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from random import choice

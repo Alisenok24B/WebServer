@@ -19,15 +19,15 @@ login_manager.init_app(app)
 @app.route("/")
 def index():  # main website
     # db_sess = db_session.create_session()
-    with open('anekdot.json') as joke_file:  # open json file
+    with open('static/json/anekdot.json') as joke_file:  # open json file
         data = json.load(joke_file)  # create json object
-        joke = choice(data.keys())  # choice random joke
+        index_joke = choice(list(data.keys()))  # choice random joke
     '''if current_user.is_authenticated:
         news = db_sess.query(News).filter(
             (News.user == current_user) | (News.is_private != True))
     else:
         news = db_sess.query(News).filter(News.is_private != True)'''
-    return render_template("index.html", joke=joke)  # see the main website
+    return render_template("index.html", joke=data[index_joke])  # see the main website
 
 
 @app.route('/register', methods=['GET', 'POST'])  # register
@@ -168,7 +168,7 @@ def edit_news(id):
 
 def main():
     db_session.global_init("db/horoscope.db")
-    app.run(debug=True)
+    app.run(host='127.0.0.1', port=8080, debug=True)
 
 
 if __name__ == '__main__':

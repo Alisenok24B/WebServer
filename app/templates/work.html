@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+                    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+                    crossorigin="anonymous">
+                    <title>Гороскоп</title>
+                  </head>
+    <body>
+	{% extends "base.html" %}
+
+	{% block content %}
+    <div class="container p-3 my-3 border"><h1>Хотите Гороскоп?</h1></div>
+	<div class="container p-3 my-3 border"><h2 class="display-4">{{anekdot}}</h2><div>
+
+
+    </div>
+	{% endif %}
+	{% endfor %}
+	{% endblock %}
+    </body>
+</html>

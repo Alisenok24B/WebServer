@@ -79,7 +79,7 @@ def login():  # login
 
 @app.route('/logout')
 @login_required
-def logout():  # forget user & go to main website
+def logout():  # forget user and go to main website
     logout_user()
     return redirect("/")
 

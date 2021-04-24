@@ -32,3 +32,10 @@ app:
 
 README.md - краткое описание проекта и примечания
 requirements.txt - необходимые установки перед эксплуатацией
+
+Использованные технологии:
+* SQL база
+* SqlAlchemy
+* Flask, flask-login, flask-wtf
+* Json файлы
+* css

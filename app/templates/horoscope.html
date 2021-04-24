@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+	{% block content %}
+	<div class="container p-5 my-5 border">
+		<form action="/action_page.php">
+			<h1 class="display-5">Здравствуйте, {{ name }}</h1>
+			<h5>По знаку зодиака вы: {{ sign }}</h5>
+		</form>
+	<div class="media border p-3">
+		{% if sign == 'Овен' %}
+		    <img src="/static/img/aries.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Телец' %}
+		    <img src="/static/img/cells.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Близнецы' %}
+		    <img src="/static/img/twins.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Рак' %}
+		    <img src="/static/img/cancer.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Лев' %}
+		    <img src="/static/img/lion.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Дева' %}
+		    <img src="/static/img/virgin.jpg" width = 200px alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Весы' %}
+		    <img src="/static/img/scales.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Скорпион' %}
+		    <img src="/static/img/scorpion.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Стрелец' %}
+		    <img src="/static/img/saggitarius.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Козерог' %}
+		    <img src="/static/img/capricorn.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Водолей' %}
+		    <img src="/static/img/aquarius.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% elif sign == 'Рыбы' %}
+		    <img src="/static/img/pisces.jpg" alt="здесь должна была быть картинка, но не нашлась">
+		{% endif %}
+	</div>
+		<form action="/action_page.php">
+			<h5>Немного о Вас:</h5>
+			<div>{{ about_sign }}</div>
+			<h5><mark>Предсказание звёзд на сегодня:</mark></h5>
+			<div>{{ prediction }}</div>
+		</form>
+	</div>
+	{% endblock %}

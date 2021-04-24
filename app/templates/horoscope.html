@@ -32,10 +32,12 @@
 		{% elif sign == 'Рыбы' %}
 		    <img src="/static/img/pisces.jpg" width = 200px alt="здесь должна была быть картинка, но не нашлась">
 		{% endif %}
+	    <form action="/action_page.php">
+			<h5 class="text-center">Немного о Вас:</h5>
+			<div class="text-center">{{ about_sign }}</div>
+		</form>
 	</div>
 		<form action="/action_page.php">
-			<h5>Немного о Вас:</h5>
-			<div>{{ about_sign }}</div>
 			<h5>Предсказание звёзд на сегодня:</h5>
 			<div>{{ prediction }}</div>
 		</form>

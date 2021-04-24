@@ -8,6 +8,7 @@ SqlAlchemyBase = dec.declarative_base()  # declarative base
 __factory = None  # for get session connect
 
 
+
 def global_init(db_file):  # global initialization
     global __factory
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5266eb50-07ee-457f-946d-85b27b844354" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/app/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/db/horoscope.db" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
@@ -33,6 +34,9 @@
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 1cdc391f449565d332eeea2b228bcd24680b20d0
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,9 +237,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1618855467169" />
+<<<<<<< HEAD
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1619196691748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1619196691748" />
+=======
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1618925267235">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1618925267235" />
+>>>>>>> 1cdc391f449565d332eeea2b228bcd24680b20d0
   </component>
 </project>

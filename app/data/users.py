@@ -5,7 +5,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
 
-
 class User(SqlAlchemyBase, UserMixin):  # class user
     __tablename__ = 'users'  # table
 

@@ -104,7 +104,7 @@ def horoscope():  # show horoscope
 
 def main():
     db_session.global_init("db/horoscope.db")  # connection with database
-    app.run(host='127.0.0.1', port=8080, debug=True)
+    app.run(host='127.0.0.1', port=8080)
 
 
 if __name__ == '__main__':

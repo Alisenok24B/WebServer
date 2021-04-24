@@ -2,7 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5266eb50-07ee-457f-946d-85b27b844354" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/db/horoscope.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/aquarius.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/aries.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/cancer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/capricorn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/cells.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/lion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/pisces.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/saggitarius.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/scales.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/scorpion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/twins.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/img/virgin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/json/about_horoscope.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/json/info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/json/signs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/horoscope.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/__all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/__all_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/db_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 1cdc391f449565d332eeea2b228bcd24680b20d0
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,9 +237,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1618855467169" />
+<<<<<<< HEAD
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1619196691748">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1619196691748" />
+=======
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1618925267235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1618925267235" />
+>>>>>>> 1cdc391f449565d332eeea2b228bcd24680b20d0
   </component>
 </project>
